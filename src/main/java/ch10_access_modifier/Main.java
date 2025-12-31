@@ -17,7 +17,6 @@ class AccessModifierExample { // 간판 클래스는 public이 명시돼야 함.
     // 해당 클래스의 고유 methods
 }
 
-
 public class Main {
     public static void main(String[] args) {
         AccessModifierExample example = new AccessModifierExample();
