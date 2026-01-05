@@ -83,10 +83,10 @@ public class Array01 {
 
         // 비어있는 String 배열을 선언하고 내부 element로 "안" "녕" "하" "세" "요" 로
         // 초기화한 후 안녕하세요 로 콘솔에 출력
-
-        String[] hello = {"안", "녕", "하", "세", "요"};
-        for (int i = 0 ; i < hello.length ; i ++) {
-            hello[i] = i;
+        System.out.println();
+        String[] arr05 = {"안", "녕", "하", "세", "요"};
+        for (int i = 0; i < arr05.length ; i ++) {
+            System.out.print(arr05[i]);
         }
 
     }

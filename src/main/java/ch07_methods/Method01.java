@@ -48,10 +48,7 @@ public class Method01 {
             특정 메서드의 결과값이 다른 메서드의 argument로 사용될 수 있습니다.
 
             함수형 프로그래밍(functional programming) :
-                메서드1의 return 값이 메서드2의 arugument가 되고, 메서드2의 return값이
-                메서드3의 argument가 되는 방식으로,
 
-                첫 번째 메서드로부터 마지막 메서드까지의 흐름을 통해 프로그램이 이어지는 방식
 
                 간단 예시
 
