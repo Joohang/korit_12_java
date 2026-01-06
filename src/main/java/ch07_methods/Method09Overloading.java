@@ -64,7 +64,7 @@ import java.util.Scanner;
 
 
  */
-public class Method09Overloading {
+public class  Method09Overloading {
     // call1() 유형으로 정의
     public void add(){
         System.out.println("add()");

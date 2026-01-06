@@ -54,7 +54,8 @@ public class Array03Method {
 
     public static void main(String[] args) {
         // 동일한 클래스라도 'static'을 붙이지 않으면 객체 생성을 해야지 매서드 호출 가능
-        Array03Method array03Method = new Array03Method();
-        array03Method.writNameAndScore();
+//        Array03Method array03Method = new Array03Method();
+//        array03Method.writNameAndScore();
+
     }
 }

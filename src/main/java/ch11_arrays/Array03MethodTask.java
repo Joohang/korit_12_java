@@ -10,13 +10,46 @@ import java.util.Scanner;
 // 이름 학생의 점수를 입력하세요 >>> 가 나오거나,
 // n 번째 학생의 점수를 입력하세요 >>> 가 나올 수 있도록 하시오.
 public class Array03MethodTask {
-    public static int inputNum() {
-        Scanner scanner = new Scanner(System.in);
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+//        int limit = inputNum();
+    }
+    public int inputNum() {
         System.out.println("학생의 수를 입력하세요 >>> ");
-        int num = scanner.nextInt();
-        scanner.nextLine();
-        return num;
+
+        return scanner.nextInt();
     }
 
+    private static void inputNames(String[] humans) {
+       for (int i = 0 ; i < humans.length ; i ++) {
+           System.out.println((i+1) + "번 학생의 이름을 입력 하세요 >>> ");
+           humans[i] = scanner.next();
+       }
 
+    }
+    public static void intputScore(String[] humans , double[] scores) {
+        for (int i = 0 ; i < humans.length ; i++ ) {
+            System.out.println(humans[i] + "학생의 점수를 입력하세요");
+            scores[i] = scanner.nextDouble();
+        }
+    }
+
+    public static void inputScore (int num, double[] scores) {
+        for (int i = 0 ; i < num ; i++) {
+            System.out.println((i+1) + "번째 학생의 점수를 입력하세요 >>>");
+            scores[i] = scanner.nextDouble();
+        }
+    }
+
+    public static void writeNameAndScore (String[] humans, double[] scores) {
+        double total = 0;
+        for (double score : scores ) {
+            total += score;
+        }
+        for (int i = 0 ; i < humans.length ; i ++) {
+            System.out.println(humans[i] + " : " + scores[i] + "점");
+        }
+        System.out.println("학생들의 점수 총합은 " + total + "점입니다." );
+    }
 }
