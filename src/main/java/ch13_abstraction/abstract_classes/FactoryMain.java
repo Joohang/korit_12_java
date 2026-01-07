@@ -55,5 +55,30 @@ public class FactoryMain {
             만약 부모 클래스에 showInfo() 메서드가 있는 걸 몰랐다면
             PhoneFactory 클래스에 별개의 showInfo() 메서드를 따로 정의했을테니까요.
          */
+        System.out.println("------------------------------------------");
+
+        TableFactory tableFactory1 = new TableFactory();
+        tableFactory1.upgrade("아이패드 프로 13인치 8세대");
+        tableFactory1.setName("애플 태블릿 공장");
+        tableFactory1.getName();
+        tableFactory1.setName("구글 태블릿 공장");
+
+
+        tableFactory1.produce("구글 테블릿");
+        tableFactory1.manage();
+        tableFactory1.upgrade("구글 테블릿 10인치 2세대");
+
+//        9. Factory 클래스의 인스턴스인 factory2 객체를 생성할 것
+//                - produce() 메서드는 model + 컴퓨터를 생산합니다. 라고 출력될 수 있도록 재정의
+//                - manage() 메서드는 컴퓨터 공장을 관리합니다. 라고 출력될 수 있도록 재정의
+//        factory2 메서드의 name은 삼성 컴퓨터 공장으로 set하시오.
+//                factory2.showInfo()를 호출할 것
+
+        TableFactory tableFactory2 = new TableFactory();
+        System.out.println("==================");
+        tableFactory2.setName("삼성 컴퓨터 공장");
+        tableFactory2.produce("갤럭시북");
+        System.out.println("==================");
+        tableFactory2.showInfo();
     }
 }

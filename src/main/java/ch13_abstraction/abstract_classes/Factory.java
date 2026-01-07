@@ -10,6 +10,7 @@ public abstract class Factory {
 
     // Getter / Setter 정의
     public String getName() {
+        System.out.println("현재 공장은 " + name + " 공장으로 변경되었습니다.");
         return name;
     }
 
