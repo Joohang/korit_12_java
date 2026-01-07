@@ -1,11 +1,12 @@
 package ch12_inheritance.books;
 
 public class Ebook extends Book{
+
     private double fileSize;
     private String format;
 
     public Ebook(String title, String author, double fileSize, String format) {
-        super(title, author);
+        super(title, author); // 부모 클래스의 생성자 호출 (중요!!)
         this.fileSize = fileSize;
         this.format = format;
     }
@@ -26,9 +27,10 @@ public class Ebook extends Book{
         this.format = format;
     }
 
+    // Book클래스의 showinfo() 메서드를 override하여 추가 부분만 '재정의'
     @Override
     public void showInfo() {
-        super.showInfo();
-        System.out.println("파일 크기 : " + fileSize +"mb" + "\n" + "파일 형식 : " + format);
+        super.showInfo(); // 부모 클래스의 메서드를 호출 (중요!!)
+        System.out.println("파일 크기 : " + fileSize +" mb" + "\n" + "파일 형식 : " + format);
     }
 }

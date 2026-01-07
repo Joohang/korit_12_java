@@ -4,6 +4,7 @@ import ch12_inheritance.products.Product;
 
 public class BookMain {
     public static void main(String[] args) {
+//        Book book = new Book();  이제는 이렇게 생성하는게 불가능 - > AllArgsConstructor
         Book book1 = new Book("자바의 정석","남궁성");
         System.out.println("이 책의 제목은 " + book1.getTitle()+
                 "입니다 \n이 책의 저자는 " + book1.getAuthor()+ "입니다.");
@@ -12,9 +13,13 @@ public class BookMain {
         System.out.println("-----------------------");
         Ebook ebook1 = new Ebook("스프링 입문","이강준"
         ,5.2,"EPUB");
-        ebook1.setFormat("PDF");
+        ebook1.setFormat("PDF");        // 자식 클래스의 고유 메서드에 해당하겠네요.
         System.out.println("이 전자책의 포맷은 " + ebook1.getFormat() + "입니다.");
         System.out.println("-----------------------");
+        // 재정의된 메서드 호출
         ebook1.showInfo();
     }
 }
+/*
+
+ */
