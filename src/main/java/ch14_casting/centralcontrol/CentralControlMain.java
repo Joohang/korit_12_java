@@ -11,7 +11,7 @@ public class CentralControlMain {
         // 이하의 코드는 비어있는 배열을 CentralControl 클래스의 field인 deviceArray에 집어넣었네요.
         CentralControl centralControl1 = new CentralControl(new Power[10]);
         // 이하의 코드는 powers 배열을 만든 다음에 내부에 Power의 하위 클래스들의 객체를 집어넣었습니다.
-        Power[] powers = {new AirConditioner(), new Computer(), new Mouse(), new LED(), new Printer() , new Speaker()}; // 여기서 이루어졌습니다.
+        Power[] powers = {new AirConditioner(), new Computer(), new Mouse(), new LED()}; // 여기서 이루어졌습니다.
 
         /*
             근데 저희는 여기서 각 전자기기들의 객체를 생성하고 여기서 집어넣는 것까지 전체 다 실험할 예정이기 때문에
@@ -54,6 +54,9 @@ public class CentralControlMain {
 
         centralControl1.deleteDevice4();
         centralControl1.deleteDevice5();
+
+
+
 
 
     }
