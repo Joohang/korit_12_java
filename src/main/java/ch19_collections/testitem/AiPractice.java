@@ -24,7 +24,7 @@ public class AiPractice {
 
 
     public static void main(String[] args) {
-        Map<String, Integer> g = new HashMap<>();
+        Map<String, Integer> inventory = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
         while (true) {
             int choice;
