@@ -10,5 +10,6 @@ public class ScoreTest {
                 .map(s->s+5)                // 3. 남아있는 거에 5점씩 더해줄거다
                 .sorted()                           // 4. 오름 차순으로 정렬할거다
                 .forEach(System.out::println);      // 5. 각각 출력할거다
+        System.out.println();
     }
 }
