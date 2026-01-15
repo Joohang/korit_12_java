@@ -39,7 +39,7 @@ public class Exception1 {
         // 즉 이상의 코드는 아까 확인한 예외와 관련된 클래스를 사용하지 않는 예시
         // 라고 할 수 있습니다.
         /*
-            예외 처리를 적용한 방식의 코등 try / catch / finally
+            예외 처리를 적용한 방식의 코드 try / catch / finally
          */
         int a = 10;
         int b = 0;
